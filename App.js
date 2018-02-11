@@ -7,8 +7,26 @@ import colours from './src/styles/colors.js';
 import containers from './src/styles/containers.js';
 import WelcomeScene from './src/scenes/WelcomeScene.js';
 import TimeScene from './src/scenes/TimeScene.js';
+import RangeScene from './src/scenes/RangeScene.js';
+import FindScene from './src/scenes/FindScene.js';
+import InfosPlaceScene from './src/scenes/InfosPlaceScene.js';
 
-const Where2eat = StackNavigator({
-  Welcome: { screen: WelcomeScene },
+const RootStack = StackNavigator(
+  {
+    Welcome: { screen: WelcomeScene },
+    Time: { screen: TimeScene },
+    Range: { screen: RangeScene },
+    Find: { screen: FindScene },
+    InfosPlace: { screen: InfosPlaceScene }
+  },
+  {
+    initialRouteName: 'Welcome',
+    headerMode: 'none'
+  }
+);
 
-});
+export default class Where2eat extends React.Component {
+  render() {
+    return <RootStack />;
+  }
+}
