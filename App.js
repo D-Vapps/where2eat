@@ -7,11 +7,13 @@ import colours from './src/styles/colors.js';
 import containers from './src/styles/containers.js';
 import WelcomeScene from './src/scenes/WelcomeScene.js';
 import TimeScene from './src/scenes/TimeScene.js';
+import RangeScene from './src/scenes/RangeScene.js';
 
 const RootStack = StackNavigator(
   {
     Welcome: { screen: WelcomeScene },
     Time: { screen: TimeScene },
+    Range: { screen: RangeScene }
   },
   {
     initialRouteName: 'Welcome',

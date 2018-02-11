@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const text = StyleSheet.create({
     p: {
-      color: 'black',
+      color: 'white',
       fontFamily: 'Roboto',
       fontSize: 14,
     },
@@ -10,16 +10,17 @@ const text = StyleSheet.create({
       fontWeight: 'bold',
       color: 'white',
       fontFamily: 'Roboto',
-      fontSize: 28,
+      fontSize: 32,
+      paddingVertical: 8
     },    
     subTitle: {
       fontWeight: 'bold',
-      color: 'black',
+      color: 'white',
       fontFamily: 'Roboto',
-      fontSize: 14,
+      fontSize: 14
     },
     data: {
-      color: 'black',
+      color: 'white',
       fontFamily: 'Roboto',
       fontSize: 25,
     },
