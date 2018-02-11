@@ -12,12 +12,26 @@ const text = StyleSheet.create({
       fontFamily: 'Roboto',
       fontSize: 32,
       paddingVertical: 8
-    },    
+    },
     subTitle: {
       fontWeight: 'bold',
       color: 'white',
       fontFamily: 'Roboto',
       fontSize: 14
+    },
+    questions: {
+      fontWeight: 'bold',
+      color: 'white',
+      fontFamily: 'Roboto',
+      fontSize: 32,
+      textAlign: 'center',
+    },
+    answers: {
+      fontWeight: 'normal',
+      color: 'white',
+      fontFamily: 'Roboto',
+      fontSize: 20,
+      textAlign: 'center',
     },
     data: {
       color: 'white',
@@ -26,5 +40,5 @@ const text = StyleSheet.create({
     },
 
   });
-  
+
 export default text;
