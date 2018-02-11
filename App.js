@@ -20,7 +20,7 @@ const RootStack = StackNavigator(
     InfosPlace: { screen: InfosPlaceScene }
   },
   {
-    initialRouteName: 'Welcome',
+    initialRouteName: 'Find',
     headerMode: 'none'
   }
 );
