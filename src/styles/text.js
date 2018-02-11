@@ -1,24 +1,26 @@
+import { StyleSheet } from 'react-native';
+
 const text = StyleSheet.create({
     p: {
       color: 'black',
-      fontFamily: 'Open Sans',
+      fontFamily: 'Roboto',
       fontSize: 14,
     },
     title: {
       fontWeight: 'bold',
-      color: 'black',
-      fontFamily: 'Open Sans',
-      fontSize: 20,
+      color: 'white',
+      fontFamily: 'Roboto',
+      fontSize: 28,
     },    
     subTitle: {
       fontWeight: 'bold',
       color: 'black',
-      fontFamily: 'Open Sans',
+      fontFamily: 'Roboto',
       fontSize: 14,
     },
     data: {
       color: 'black',
-      fontFamily: 'Open Sans',
+      fontFamily: 'Roboto',
       fontSize: 25,
     },
 

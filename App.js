@@ -1,23 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 
-export default class App extends React.Component {
+import text from './src/styles/text.js';
+import colours from './src/styles/colors.js';
+import containers from './src/styles/containers.js';
+
+export default class Where2eat extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
+        <View style={containers.content}>
+          <Image style={{width: 300, height: 168}}
+                source={require('./public/images/where2eat.png')} />
+          <Text style={text.title}>On mange où ? osef.</Text>
+        </View>
+    )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
