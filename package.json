@@ -20,10 +20,11 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@expo/vector-icons": "^6.2.2",
     "expo": "^25.0.0",
+    "native-base": "^2.3.8",
     "react": "16.2.0",
     "react-native": "0.52.0",
-    "react-native-material-kit": "^0.5.1",
     "react-navigation": "^1.0.3"
   },
   "rnpm": {
