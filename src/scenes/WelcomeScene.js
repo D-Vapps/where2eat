@@ -6,16 +6,12 @@ import colors from '../styles/colors.js';
 import containers from '../styles/containers.js';
 
 export default class WelcomeScene extends React.Component {
-  constructor(props) {
-    super(props);
-
-    // Toggle the state every second
-    setTimeout(() => {
-        this.props.navigation.navigate('Time');
-    }, 1000);
-  }
-
+  timer = null;
   render() {
+    setTimeout(() => {
+      this.props.navigation.navigate('Time');
+    }, 1000);
+
     return (
       <View style={containers.content}>
         <Image style={{width: 300, height: 168}}
