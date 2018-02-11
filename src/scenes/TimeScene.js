@@ -5,10 +5,12 @@ import text from '../styles/text.js';
 import colours from '../styles/colors.js';
 import containers from '../styles/containers.js';
 
-export class TimeScene extends React.Component {
+export default class TimeScene extends React.Component {
   render() {
     return (
+      <View style={containers.content}>
         <Text style={text.subTitle}>Fuck u</Text>
+      </View>
     )
   }
 }

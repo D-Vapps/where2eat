@@ -8,7 +8,19 @@ import containers from './src/styles/containers.js';
 import WelcomeScene from './src/scenes/WelcomeScene.js';
 import TimeScene from './src/scenes/TimeScene.js';
 
-const Where2eat = StackNavigator({
-  Welcome: { screen: WelcomeScene },
+const RootStack = StackNavigator(
+  {
+    Welcome: { screen: WelcomeScene },
+    Time: { screen: TimeScene },
+  },
+  {
+    initialRouteName: 'Welcome',
+    headerMode: 'none'
+  }
+);
 
-});
+export default class Where2eat extends React.Component {
+  render() {
+    return <RootStack />;
+  }
+}
