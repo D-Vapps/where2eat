@@ -26,11 +26,5 @@
     "react": "16.2.0",
     "react-native": "0.52.0",
     "react-navigation": "^1.0.3"
-  },
-  "rnpm": {
-    "assets": [
-      "./public/assets/fonts/Open_Sans/OpenSans-Regular.ttf",
-      "./public/assets/fonts/Open_Sans/OpenSans-Bold.ttf"
-    ]
   }
 }
