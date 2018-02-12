@@ -1,7 +1,9 @@
 import { GOOGLE_PLACES_API_KEY, GOOGLE_PLACES_OUTPUT_FORMAT } from 'react-native-dotenv'
 import React from 'react';
-import { ActivityIndicator } from 'react-native';
-import { Container, Content, Text, StyleProvider } from 'native-base';
+
+import { StyleProvider, Container, Content, Text, Spinner } from 'native-base';
+import getTheme from '../../native-base-theme/components';
+import material from '../../native-base-theme/variables/material';
 
 import text from '../styles/text.js';
 import colors from '../styles/colors.js';
@@ -25,10 +27,8 @@ export default class FindScene extends React.Component {
         if (this.state.isLoading) {
             return (
                 <StyleProvider style={getTheme(material)}>
-                    <Container>
-                        <Content>
-                            <ActivityIndicator size="large" style={{paddingTop: 24}} color={colors.secondary} />
-                        </Content>
+                    <Container style={containers.content}>
+                        <Spinner color={colors.secondary} />
                     </Container>
                 </StyleProvider>
             );
@@ -36,7 +36,7 @@ export default class FindScene extends React.Component {
 
         return (
             <StyleProvider style={getTheme(material)}>
-                <Container>
+                <Container style={containers.content}>
                     <Content>
                     </Content>
                 </Container>

@@ -2,16 +2,9 @@ import React from 'react';
 
 import { Text, View, Image, Button, Slider } from 'react-native';
 
-
 import text from '../styles/text.js';
 import colours from '../styles/colors.js';
 import containers from '../styles/containers.js';
-
-// import {
-//   MKSlider,
-//   MKButton,
-//   MKTouchable,
-// } from 'react-native-material-kit';
 
 export default class RangeScene extends React.Component {
     // const { params } = this.props.navigation.state;
