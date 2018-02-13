@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const colours = {
+const colors = {
   black: '#000000',
   gray: 'rgb(102,102,102)',
   midGray: 'rgb(169,169,169)',
@@ -17,4 +17,4 @@ const colours = {
   secondaryDark: '#c56000'
 };
 
-export default colours;
+export default colors;

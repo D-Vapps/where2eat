@@ -1,13 +1,11 @@
-import { GOOGLE_PLACES_API_KEY, GOOGLE_PLACES_OUTPUT_FORMAT } from 'react-native-dotenv'
 import React from 'react';
 
 import { StyleProvider, Container, Content, Text, Spinner } from 'native-base';
 import getTheme from '../../native-base-theme/components';
 import material from '../../native-base-theme/variables/material';
 
-import text from '../styles/text.js';
-import colors from '../styles/colors.js';
-import containers from '../styles/containers.js';
+import containers from '../styles/containers';
+import PlacesAPI from './PlacesApi'
 
 export default class FindScene extends React.Component {
     constructor(props) {

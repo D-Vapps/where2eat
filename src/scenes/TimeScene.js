@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, Image, TouchableOpacity, Button } from 'react-native';
 
 import text from '../styles/text.js';
-import colours from '../styles/colors.js';
+import colors from '../styles/colors.js';
 import containers from '../styles/containers.js';
 
 import DateTimePicker from 'react-native-modal-datetime-picker';
@@ -48,7 +48,7 @@ _handleDatePicked = (date) => {
             time: this.time
           })}
           title="Suivant"
-          color={colours.secondary}
+          color={colors.secondary}
         />
       </View>
     )

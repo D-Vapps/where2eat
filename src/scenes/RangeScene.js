@@ -3,7 +3,7 @@ import React from 'react';
 import { Text, View, Image, Button, Slider } from 'react-native';
 
 import text from '../styles/text.js';
-import colours from '../styles/colors.js';
+import colors from '../styles/colors.js';
 import containers from '../styles/containers.js';
 
 export default class RangeScene extends React.Component {
@@ -36,7 +36,7 @@ export default class RangeScene extends React.Component {
                onSlidingComplete={ val => this.getVal(val)}/>
 
               <Button
-                  color={colours.secondary}
+                  color={colors.secondary}
                   title="Lancer la recherche"
                   onPress = {() => this.props.navigation.navigate('Find', {
                     time: this.time,
